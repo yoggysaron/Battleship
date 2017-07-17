@@ -1,0 +1,148 @@
+@keyframes AutoSlideBelow {
+	0%  {left: 0px; }
+	10% {left: 0px; }
+	20% {left: -250px; }
+	30% {left: -250px; }
+	40% {left: -500px; }
+	50% {left: -500px; }
+	60% {left: -750px; }
+	70% {left: -750px; }
+	80% {left: -1000px; }
+	90% {left: -1000px; }
+	100% {left: 0px; }
+}
+/* HEADER */
+body {
+	overflow-x: hidden;
+
+}
+
+
+#title {
+
+	border: 0px;
+	margin:0px;
+	font-size: 4em;
+	color: #ffffff;
+}
+
+#title-below {
+ 	color: white;
+ }
+
+#banner {
+
+	text-align: center;
+	background-color: black; 
+}
+
+
+img {
+
+	width: 250px;
+	height: 200px;
+}
+
+/* BANNER BELOW */
+
+
+
+#banner-below {
+	
+	width: 100%;
+	height: 250px;
+	;
+	overflow: hidden;
+	margin-bottom: 0px;
+	border-bottom: 0px;
+}
+
+#list-below li {
+	display: inline;
+}
+
+#list-below {
+
+	display: flex;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 450px;
+	margin: 0;
+	padding: 0;
+
+	animation-name: AutoSlideBelow;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+/* BANNER BESIDE */
+
+@keyframes AutoSlideBeside {
+	0%  {right: 0px; }
+	10% {right: 0px; }
+	20% {right: -250px; }
+	30% {right: -250px; }
+	40% {right: -500px; }
+	50% {right: -500px; }
+	60% {right: -750px; }
+	70% {right: -750px; }
+	80% {right: -1000px; }
+	90% {right: -1000px; }
+	100% {right: 0px; }
+}
+
+#banner-beside {
+	
+	width: 100%;
+	height: 250px;
+	overflow: hidden;
+	margin-bottom: 0px;
+	border-bottom: 0px;
+}
+
+#list-beside li {
+	display: inline;
+}
+
+#list-beside {
+
+	display: flex;
+	position: absolute;
+	top: 420px;
+	
+	
+	margin: 0;
+	padding: 0;
+
+	animation-name: AutoSlideBeside;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+/* GAME */
+
+.life {
+
+	color: green; 
+}
+
+.name {
+
+	color: red;
+}
+
+.fight-title {
+
+	color: red;
+}
+
+.dead {
+	color: red;
+}
+
+.alive {
+	color: green; 
+}
